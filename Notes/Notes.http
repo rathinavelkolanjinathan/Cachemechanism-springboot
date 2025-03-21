@@ -4,3 +4,9 @@ While hitting first time only goes to database next time its not got to database
 it will check in the cache itself.
 @EnableCaching
 @Cacheable(cacheNames = {"userCache"})
+
+DELETE
+
+http://localhost:8080/cache-api/deleteUser/1
+
+GET:-http://localhost:8080/cache-api/getAllUsers
